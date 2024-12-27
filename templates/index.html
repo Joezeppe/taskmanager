@@ -1,0 +1,23 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+
+    <title>Home</title>
+    <link href="{% static 'tasks/css/index.css' %}" rel="stylesheet">
+    
+
+{% endblock %}
+
+
+{% block content %}
+
+  
+    <div class="container">
+        <h1>Welcome to Task Management</h1>
+        <a href="{% url 'task-list' %}">View All Tasks</a>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,35 @@
+{% load i18n %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} <link href="{% static 'css/style.css' %}" rel="stylesheet"> {% endcomment %}
+    {% comment %} <script src="{% static 'js/htmx.min.js' %}" defer></script> {% endcomment %}
+
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body>
+    
+    {% block navbar %}
+    {% endblock %}
+
+
+    {% block content %}
+    {% endblock %}
+    
+    {% block extra_body %}
+    {% endblock %}
+
+    {% block footer %}
+    {% endblock %}
+
+
+
+</body>
+
+</html>

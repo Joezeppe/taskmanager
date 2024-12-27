@@ -1,0 +1,52 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_head %}
+
+    <title>Task List</title>
+    <link href="{% static 'tasks/css/list_tasks.css' %}" rel="stylesheet">
+    
+
+{% endblock %}
+
+
+{% block content %}
+
+    <h1>Task List</h1>
+    <div class="add-task-container">
+        <a href="{% url 'task-create' %}" class="btn-add-task">Add Task</a>
+    </div>
+    <!-- Add Task Button -->
+    
+    <div class="task-container">
+        
+
+        <ul class="task-list">
+            {% for task in tasks %}
+            <li class="task-item">
+                <div class="task-details">
+                    <h2 class="task-title {% if task.completed %}completed{% endif %}">
+                        {{ task.title }}
+                    </h2>
+                    <p class="task-description">{{ task.description }}</p>
+                    <p class="task-meta">Created: {{ task.created_at|date:"Y-m-d" }}</p>
+                </div>
+                <div class="task-actions">
+                    <a href="{% url 'task-toggle-complete' task.id %}" class="toggle-complete">
+                        {% if task.completed %}Undo Complete{% else %}Mark as Complete{% endif %}
+                    </a>
+                    <!-- Edit Button -->
+                    <a href="{% url 'task-edit' task.id %}" class="btn-edit">Edit</a>
+
+                    <!-- Delete Button -->
+                    <a href="{% url 'task-delete' task.id %}" class="btn-delete">Delete</a>
+
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+
+{% endblock %}

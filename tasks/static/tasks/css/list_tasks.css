@@ -1,0 +1,153 @@
+
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Container */
+.task-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Task List */
+.task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+.task-item:hover {
+    background-color: #f9f9f9;
+}
+
+.task-details {
+    max-width: 70%;
+}
+
+.task-title {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.task-description {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+}
+
+.task-meta {
+    font-size: 0.8em;
+    color: #aaa;
+}
+
+.task-actions {
+    text-align: right;
+}
+
+.toggle-complete  {
+    background-color: #007bff;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-complete button:hover {
+    background-color: #0056b3;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+/* Style for Edit Button */
+.btn-edit {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* Add Task Button */
+.btn-add-task {
+    background-color: #007BFF; /* Blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add-task:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+ 
+.add-task-container {
+    max-width: 800px;
+    margin: 10px auto; 
+    right: 0;
+}
+
+.btn-delete {
+    background-color: #ff0000; /* Green */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #fc4c4c; /* Darker green */
+}
