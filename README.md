@@ -2,6 +2,7 @@
 
 **Task Manager** is a simple web application built using Django to demonstrate CRUD (Create, Read, Update, Delete) operations. This project is perfect for beginners learning Django or as a starting point for building more complex task management applications.
 
+
 ---
 
 ## Features
@@ -88,6 +89,11 @@ task-manager/
 ├── requirements.txt      # Python dependencies
 └── ...
 ```
+
+---
+## Watch Short Demo
+
+https://www.loom.com/share/37481b4b879a477496b0b323c302275b?sid=beb24fd6-f82c-4a12-b771-9dc9b5c1de16 
 
 ---
 
